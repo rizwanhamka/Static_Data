@@ -2,7 +2,5 @@ import { NextResponse } from "next/server";
 import { db } from "@/../db";
 
 export async function GET() {
-  return NextResponse.json({
-    data: db.berita,
-  });
+  return NextResponse.json(db.berita);
 }
