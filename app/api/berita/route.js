@@ -3,7 +3,6 @@ import { db } from "@/../db";
 
 export async function GET() {
   return NextResponse.json({
-    status: 200,
     data: db.berita,
   });
 }
